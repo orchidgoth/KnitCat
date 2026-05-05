@@ -14,7 +14,7 @@ struct HomeScreen: View {
     @State private var newProjectName = ""
     
     @State private var projects: [Project] = [
-        Project(projectName: "Sweater", rowCount: 12, repeatCount: 4)
+        Project(projectName: "Something soft", rowCount: 12, repeatCount: 4)
     ]
     
     var body: some View {

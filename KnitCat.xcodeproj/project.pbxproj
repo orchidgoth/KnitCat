@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		884223182F23B918008F5EFA /* Knitting Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Knitting Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		884223182F23B918008F5EFA /* KnitCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnitCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A7453C2F291B3700A923D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8842231A2F23B918008F5EFA /* Knitting Counter */ = {
+		8842231A2F23B918008F5EFA /* KnitCat */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Knitting Counter";
+			path = KnitCat;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -34,7 +34,7 @@
 			isa = PBXGroup;
 			children = (
 				88A7453C2F291B3700A923D3 /* Info.plist */,
-				8842231A2F23B918008F5EFA /* Knitting Counter */,
+				8842231A2F23B918008F5EFA /* KnitCat */,
 				884223192F23B918008F5EFA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -42,7 +42,7 @@
 		884223192F23B918008F5EFA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				884223182F23B918008F5EFA /* Knitting Counter.app */,
+				884223182F23B918008F5EFA /* KnitCat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -50,9 +50,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		884223172F23B918008F5EFA /* Knitting Counter */ = {
+		884223172F23B918008F5EFA /* KnitCat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 884223262F23B91B008F5EFA /* Build configuration list for PBXNativeTarget "Knitting Counter" */;
+			buildConfigurationList = 884223262F23B91B008F5EFA /* Build configuration list for PBXNativeTarget "KnitCat" */;
 			buildPhases = (
 				884223142F23B918008F5EFA /* Sources */,
 				884223152F23B918008F5EFA /* Frameworks */,
@@ -63,13 +63,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				8842231A2F23B918008F5EFA /* Knitting Counter */,
+				8842231A2F23B918008F5EFA /* KnitCat */,
 			);
-			name = "Knitting Counter";
+			name = KnitCat;
 			packageProductDependencies = (
 			);
 			productName = "Knitting Counter";
-			productReference = 884223182F23B918008F5EFA /* Knitting Counter.app */;
+			productReference = 884223182F23B918008F5EFA /* KnitCat.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -87,7 +87,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 884223132F23B918008F5EFA /* Build configuration list for PBXProject "Knitting Counter" */;
+			buildConfigurationList = 884223132F23B918008F5EFA /* Build configuration list for PBXProject "KnitCat" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -101,7 +101,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				884223172F23B918008F5EFA /* Knitting Counter */,
+				884223172F23B918008F5EFA /* KnitCat */,
 			);
 		};
 /* End PBXProject section */
@@ -257,7 +257,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Knitting Counter/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"KnitCat/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -285,7 +285,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Knitting Counter/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"KnitCat/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -309,7 +309,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		884223132F23B918008F5EFA /* Build configuration list for PBXProject "Knitting Counter" */ = {
+		884223132F23B918008F5EFA /* Build configuration list for PBXProject "KnitCat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				884223242F23B91B008F5EFA /* Debug */,
@@ -318,7 +318,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		884223262F23B91B008F5EFA /* Build configuration list for PBXNativeTarget "Knitting Counter" */ = {
+		884223262F23B91B008F5EFA /* Build configuration list for PBXNativeTarget "KnitCat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				884223272F23B91B008F5EFA /* Debug */,
