@@ -1,7 +1,7 @@
 # KnitCat 🧶🐱 (+🇩🇪 German version below)
 
 A knitting counter iPhone app for patterns with repeated motifs, increases or decreases. Built with SwiftUI.
-‼️ You'll need Xcode and/or an iPhone to see it in action.
+ - ‼️You'll need Xcode and/or an iPhone to see it in action.
 
 ## Features
 - Main counter for knitting rows
