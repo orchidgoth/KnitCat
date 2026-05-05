@@ -11,7 +11,7 @@ import SwiftUI
 struct Knitting_CounterApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CounterView()
         }
     }
 }
