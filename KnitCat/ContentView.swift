@@ -60,7 +60,7 @@ struct CounterView: View {
                         
                         ZStack {
                             
-                            Image("starButton")
+                            Image("pawButton")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 100, height: 100)
@@ -71,6 +71,7 @@ struct CounterView: View {
                                 .frame(width: 80, height: 80)
                                 .cornerRadius(80)
                                 .foregroundColor(Color.white)
+                                .offset(y: 20)
                         }
                     } //end of button 1
                     
@@ -83,7 +84,7 @@ struct CounterView: View {
                         
                         ZStack {
                             
-                            Image("starButton")
+                            Image("pawButton")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 100, height: 100)
@@ -95,6 +96,7 @@ struct CounterView: View {
                                 .frame(width: 80, height: 80)
                                 .cornerRadius(80)
                                 .foregroundColor(Color.white)
+                                .offset(y: 20)
                         }
                     } // end of button 2
                 }
