@@ -23,10 +23,10 @@ struct CounterView: View {
                 .scaledToFill()
                 .ignoresSafeArea()
             
-            VStack {
+           VStack {
                 Spacer(minLength: 10)
                 mainCounterView
-                Spacer(minLength: 5)
+               Spacer(minLength: 1)
                 subCountersView
                 Spacer(minLength: 10)
             }
@@ -36,7 +36,7 @@ struct CounterView: View {
     
     var mainCounterView: some View {
             
-            VStack {
+        VStack(spacing: 2) {
                 
                 Text("Row counter")
                     .font(.custom("MarkerFelt-Thin", size: 40))
@@ -45,7 +45,7 @@ struct CounterView: View {
                     .shadow(color: .white.opacity(0.7), radius: 2, x: -2, y: -2)
                 
                 Text("\(counter)")
-                    .font(.custom("MarkerFelt-Thin", size: 120))
+                    .font(.custom("MarkerFelt-Thin", size: 100))
                     .foregroundColor(Color(red: 0.996, green: 0.984, blue: 0.808))
                 
                     .shadow(color: .black.opacity(0.8), radius: 2, x: 2, y: 2)
@@ -123,7 +123,7 @@ struct CounterView: View {
                 
                 
             }
-            .padding()
+            //.padding() removed this to make the entire page "tighter", might use later
             
         } // Main Counter View ends here
     
@@ -132,61 +132,107 @@ struct CounterView: View {
         HStack (spacing: 20) { // text+button sets aligned horizontally
             VStack(spacing: 10) { // text and button above each other
                 
-                Text("Motif\nrepeats")
+                Text("Motifs")
                     .font(.custom("MarkerFelt-Thin", size: 30))
                     .foregroundColor(Color(red: 0.996, green: 0.984, blue: 0.808))
                     .shadow(color: .black.opacity(0.5), radius: 2, x: 2, y: 2)
                     .shadow(color: .white.opacity(0.7), radius: 2, x: -2, y: -2)
                     .padding(.horizontal, 10)
                 
-                Button(action: {print ("peepeepoopoo this is a placeholder")
-                })
-                {
-                    ZStack {
-                        
-                        Image("starButton")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 50, height: 50)
-                        
-                        
-                        Text ("+")
-                            .font(.custom("MarkerFelt-Thin", size: 30))
-                            .frame(width: 80, height: 80)
-                            .cornerRadius(80)
-                            .foregroundColor(Color.white)
-                    }
-                } // button ends here
-                
+                HStack {
+                    
+                    Button(action: {print ("peepeepoopoo this is a placeholder")
+                    })
+                    {
+                        ZStack {
+                            
+                            Image("pawButton")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
+                            
+                            
+                            Text ("+")
+                                .font(.custom("MarkerFelt-Thin", size: 30))
+                                .frame(width: 80, height: 80)
+                                .cornerRadius(80)
+                                .foregroundColor(Color.white)
+                                .offset(y: 10)
+                        }
+                    } // button ends here
+                    
+                    Button(action: {print ("peepeepoopoo this is a placeholder")
+                    })
+                    {
+                        ZStack {
+                            
+                            Image("pawButton")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
+                            
+                            
+                            Text ("-")
+                                .font(.custom("MarkerFelt-Thin", size: 30))
+                                .frame(width: 80, height: 80)
+                                .cornerRadius(80)
+                                .foregroundColor(Color.white)
+                                .offset(y: 10)
+                        }
+                    } // button ends here
+                }
             }
             
             
             VStack(spacing: 10) { // the other text and buttom below each other
                 
-                Text("Inc/dec\nrepeats")
+                Text("Inc/dec")
                     .font(.custom("MarkerFelt-Thin", size: 30))
                     .foregroundColor(Color(red: 0.996, green: 0.984, blue: 0.808))
                     .shadow(color: .black.opacity(0.5), radius: 2, x: 2, y: 2)
                     .shadow(color: .white.opacity(0.7), radius: 2, x: -2, y: -2)
                     .padding(.horizontal, 10)
                 
-                Button(action: {print ("peepeepoopoo this is a placeholder")
-                })
-                {
-                    ZStack {
-                        
-                        Image("starButton")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 50, height: 50)
-                        
-                        Text ("+")
-                            .font(.custom("MarkerFelt-Thin", size: 30))
-                            .frame(width: 80, height: 80)
-                            .cornerRadius(80)
-                            .foregroundColor(Color.white)
-                    }
-                } // button ends here
+                HStack {
+                    
+                    Button(action: {print ("peepeepoopoo this is a placeholder")
+                    })
+                    {
+                        ZStack {
+                            
+                            Image("pawButton")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
+                            
+                            Text ("+")
+                                .font(.custom("MarkerFelt-Thin", size: 30))
+                                .frame(width: 80, height: 80)
+                                .cornerRadius(80)
+                                .foregroundColor(Color.white)
+                                .offset(y: 10)
+                        }
+                    } // button ends here
+                    
+                    Button(action: {print ("peepeepoopoo this is a placeholder")
+                    })
+                    {
+                        ZStack {
+                            
+                            Image("pawButton")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
+                            
+                            Text ("-")
+                                .font(.custom("MarkerFelt-Thin", size: 30))
+                                .frame(width: 80, height: 80)
+                                .cornerRadius(80)
+                                .foregroundColor(Color.white)
+                                .offset(y: 10)
+                        }
+                    } // button ends here
+                }
                 
             }
             
@@ -195,6 +241,10 @@ struct CounterView: View {
     
     private func incrementCounter() {
         counter += 1
+        if counter > 5000 {
+            counter = 5000
+            print ("I can't count more, counter's at its limit!")
+        }
     }
     
     private func decrementCounter() {
