@@ -11,9 +11,10 @@ import AudioToolbox
 
 struct CounterView: View {
     
-    @State private var counter: Int = 0
+    @State private var rowCounter: Int = 0
     @State private var motifCounter: Int = 0
     @State private var incDecCounter: Int = 0
+    @State private var counterValue: Int = 0
     
     var body: some View {
         
@@ -44,7 +45,7 @@ struct CounterView: View {
                     .shadow(color: .black.opacity(0.5), radius: 2, x: 2, y: 2)
                     .shadow(color: .white.opacity(0.7), radius: 2, x: -2, y: -2)
                 
-                Text("\(counter)")
+                Text("\(rowCounter)")
                     .font(.custom("MarkerFelt-Thin", size: 100))
                     .foregroundColor(Color(red: 0.996, green: 0.984, blue: 0.808))
                 
@@ -240,22 +241,22 @@ struct CounterView: View {
     }
     
     private func incrementCounter() {
-        counter += 1
-        if counter > 5000 {
-            counter = 5000
+        counterValue += 1
+        if counterValue > 5000 {
+            counterValue = 5000
             print ("I can't count more, counter's at its limit!")
         }
     }
     
     private func decrementCounter() {
-        if counter > 0 {
-            counter -= 1
+        if counterValue > 0 {
+            counterValue -= 1
             
         }
     }
     
     private func clearCounter() {
-        counter = 0
+        counterValue = 0
     }
     
     private func addMotifCounter() {
