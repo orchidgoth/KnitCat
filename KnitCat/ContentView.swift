@@ -14,7 +14,6 @@ struct CounterView: View {
     @State private var rowCounter: Int = 0
     @State private var motifCounter: Int = 0
     @State private var incDecCounter: Int = 0
-    @State private var counterValue: Int = 0
     
     var body: some View {
         
@@ -55,7 +54,7 @@ struct CounterView: View {
                 HStack(spacing: 60) {
                     
                     Button (action: {
-                        incrementCounter()
+                        addRow()
                         buttonVibration()
                     }) {
                         
@@ -78,7 +77,7 @@ struct CounterView: View {
                     
                     
                     Button (action: {
-                        decrementCounter()
+                        removeRow()
                         buttonVibration()
                     })
                     {
@@ -103,7 +102,7 @@ struct CounterView: View {
                 }
                 
                 Button (action: {
-                    clearCounter()
+                    clearRowCounter()
                     resetButtonVibration()
                 })
                 {
@@ -240,23 +239,23 @@ struct CounterView: View {
         }
     }
     
-    private func incrementCounter() {
-        counterValue += 1
-        if counterValue > 5000 {
-            counterValue = 5000
+    private func addRow() {
+        rowCounter += 1
+        if rowCounter > 5000 {
+            rowCounter = 5000
             print ("I can't count more, counter's at its limit!")
         }
     }
     
-    private func decrementCounter() {
-        if counterValue > 0 {
-            counterValue -= 1
+    private func removeRow() {
+        if rowCounter > 0 {
+            rowCounter -= 1
             
         }
     }
     
-    private func clearCounter() {
-        counterValue = 0
+    private func clearRowCounter() {
+        rowCounter = 0
     }
     
     private func addMotifCounter() {
